@@ -9,7 +9,7 @@ fn main() {
 
     let _ = alfred::json::write_items(
         io::stdout(),
-        &[alfred::ItemBuilder::new("U2D")
+        &[alfred::ItemBuilder::new(dt.to_string())
             .arg(dt.to_string())
             .subtitle("convert unixtime to datetime")
             //.icon_filetype("public.folder")
